@@ -1,7 +1,10 @@
 package com.limolearn.student.service;
 
-import org.springframework.stereotype.Service;
 
-@Service
-public class StudentService {
+import com.limolearn.student.dto.CreateStudentRequest;
+import com.limolearn.student.dto.StudentResponse;
+
+public interface StudentService {
+
+    StudentResponse registrarEstudiante(CreateStudentRequest request);
 }
